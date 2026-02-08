@@ -60,7 +60,7 @@ In this session, I practically worked with WSL, Ubuntu, and Git commands to get 
 
 ---
 
-## 🔹 Updated WSL
+##  Updated WSL
 
 ```powershell
 wsl --update
@@ -71,7 +71,7 @@ WSL was updated successfully and the latest version was verified.
 
 ---
 
-## 🔹 Started Ubuntu
+##  Started Ubuntu
 
 ```powershell
 wsl
@@ -81,7 +81,7 @@ Ubuntu terminal opened correctly.
 
 ---
 
-## 🔹 Practiced Linux Navigation Commands
+##  Practiced Linux Navigation Commands
 
 ```bash
 pwd
@@ -94,7 +94,7 @@ Created and navigated into folders.
 
 ---
 
-## 🔹 Created and Managed Files
+##  Created and Managed Files
 
 ```bash
 touch test.txt
@@ -107,7 +107,7 @@ Tested file creation, copy, move, and delete operations.
 
 ---
 
-## 🔹 Updated Ubuntu Packages
+##  Updated Ubuntu Packages
 
 ```bash
 sudo apt update
@@ -118,7 +118,7 @@ System packages were updated successfully.
 
 ---
 
-## 🔹 Installed Git
+##  Installed Git
 
 ```bash
 sudo apt install git
@@ -129,7 +129,7 @@ Git installed and verified.
 
 ---
 
-## 🔹 Practiced Git Workflow
+##  Practiced Git Workflow
 
 ```bash
 git init
