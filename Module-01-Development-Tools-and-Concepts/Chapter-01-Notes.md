@@ -101,8 +101,8 @@ wsl --set-default-version 2
 When Ubuntu launches for the first time:
 
 - Enter username
-- Set password
-- Confirm password
+- New password
+- Re-type new password
 
 These credentials will be used for future sessions.
 
