@@ -1,45 +1,65 @@
 # 📚 Learnings
 
 ## Chapter 1 – WSL & Ubuntu
+## Learnings
 
-From this session, I learned how to use Linux inside Windows using WSL.
+From this session, I learned how to set up and use Linux inside Windows using Windows Subsystem for Linux (WSL).
 
 ---
 
-## What I Learned
+##  What I Learned
 
-- What WSL is
-- How Linux can run inside Windows
+- What WSL is and why it is used
+- How Linux runs inside Windows without a virtual machine
 - Difference between WSL and Virtual Machine
-- How to install Ubuntu
-- How to use basic Linux commands
+- How to install Ubuntu on WSL
+- How to work in the Linux terminal
+- How to troubleshoot WSL installation issues
 
 ---
 
-## New Commands Learned
+##  New Commands Learned
 
-- wsl --install
-- wsl --version
-- wsl --list --online
-- wsl
-- sudo apt update
-- sudo apt upgrade
+```powershell
+wsl --version
+wsl --list --online
+wsl --set-default-version 2
+wsl
+```
 
----
-
-## Skills Gained
-
-- Installed Ubuntu successfully
-- Created Linux user account
-- Used Linux terminal
-- Updated packages
-- Understood basic Linux environment
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
 
 ---
 
-## Conclusion
+##  Practical Understanding
 
-Now I can use Ubuntu inside Windows for development and practice Linux commands easily without installing a separate OS.
+- Enabled Windows features required for WSL
+- Installed WSL manually using MSI installer
+- Verified WSL installation
+- Installed Ubuntu distribution
+- Created Linux username and password
+- Opened Ubuntu using terminal
+- Updated Linux packages
+
+---
+
+##  Skills Gained
+
+- Installed and configured WSL successfully
+- Used Ubuntu inside Windows
+- Navigated Linux terminal
+- Managed packages using apt
+- Set up a basic Linux development environment
+
+---
+
+##  Conclusion
+
+Now I can comfortably use Ubuntu inside Windows for development and practice Linux commands without using a virtual machine or dual boot setup.
+
 
 
 ## Chapter 2 – Development Environment Setup
