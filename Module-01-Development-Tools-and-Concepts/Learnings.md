@@ -117,3 +117,75 @@ This setup will help me in future development and internship tasks.
 
 ---
 
+## Chapter 3 – Week 1 – Session 3
+## WSL Internals, Linux File System & UV/LLM Tools
+
+In this session, I gained a deeper understanding of how Linux works inside Windows using WSL and learned how to use terminal-based tools for development and AI interaction.
+
+---
+
+## 🔹 Concepts Learned
+
+- How the computer boot process works (BIOS/UEFI → OS loading)
+- What a hypervisor is and how it manages hardware resources
+- How WSL runs Linux inside Windows without a virtual machine
+- Difference between WSL and traditional virtual machines
+- Basic structure of the Linux file system
+
+---
+
+## 🔹 Linux Knowledge Gained
+
+- Root directory structure (/)
+- Important folders like /home, /mnt, /bin, /etc
+- Difference between absolute and relative paths
+- Difference between Linux (/) and Windows (\) paths
+- How Windows drives are mounted inside WSL
+
+---
+
+## 🔹 Terminal Skills Learned
+
+- Navigating folders using commands
+- Managing files and directories
+- Clearing terminal
+- Working fully from command line
+
+---
+
+## 🔹 Development Skills Learned
+
+- Using VS Code with WSL
+- Opening projects directly from terminal
+- Installing Python-based tools
+- Managing packages using UV
+- Using command-line automation tools
+
+---
+
+## 🔹 AI Tool Knowledge
+
+- Installing LLM CLI tool
+- Setting API keys securely
+- Connecting to Gemini and GPT models
+- Running AI queries directly from terminal
+- Understanding practical use of AI in development workflow
+
+---
+
+## 🔹 Outcome
+
+Now I am comfortable:
+- Working inside Ubuntu (WSL)
+- Navigating Linux file systems
+- Integrating VS Code with Linux
+- Installing and managing tools from terminal
+- Using AI models from command line for productivity
+
+This session improved my confidence in Linux usage and automation-based development.
+
+---
+
+
+
+
