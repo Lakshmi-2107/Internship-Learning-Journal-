@@ -193,4 +193,138 @@ Initialized repository and pushed code to GitHub.
 
 ---
 
+## Chapter 3 – Week 1 – Session 3
+## WSL Internals, Linux File System & UV/LLM Tools
+
+In this session, I practically explored the Linux environment inside WSL, navigated the file system, accessed Windows files, integrated VS Code, and installed UV and LLM tools to interact with AI models from the terminal.
+
+---
+
+##  Opened Ubuntu using WSL
+
+```powershell
+wsl
+```
+
+Ubuntu terminal launched successfully.
+
+---
+
+##  Checked current directory
+
+```bash
+pwd
+```
+
+Verified the current working location.
+
+---
+
+##  Listed files and folders
+
+```bash
+ls
+```
+
+Viewed directory contents.
+
+---
+
+##  Navigated directories
+
+```bash
+cd ~
+cd ..
+cd /mnt/c
+```
+
+- Accessed home folder  
+- Moved to parent directory  
+- Opened Windows C drive  
+
+---
+
+##  Explored Linux file structure
+
+```bash
+cd /
+ls
+```
+
+Observed directories like `/home`, `/mnt`, `/bin`, `/etc`.
+
+---
+
+##  Cleared terminal
+
+```bash
+clear
+```
+
+---
+
+##  Opened project in VS Code
+
+```bash
+code .
+```
+
+VS Code opened with WSL terminal integration.
+
+---
+
+##  Installed UV tool
+
+```bash
+pip install uv
+uv --version
+```
+
+Verified installation.
+
+---
+
+##  Installed LLM tool
+
+```bash
+uv tool install llm
+```
+
+Successfully installed CLI tool.
+
+---
+
+##  Configured API keys
+
+```bash
+llm key set gemini
+llm key set openai
+```
+
+Added API keys for model access.
+
+---
+
+##  Tested LLM commands
+
+```bash
+llm "Hello"
+llm -m gemini-2.5 "Explain WSL"
+llm -m gpt-4 "What is Linux?"
+```
+
+Received responses from AI models.
+
+---
+
+##  Result
+
+- Navigated Linux directories confidently
+- Accessed Windows files through `/mnt`
+- Used VS Code with WSL
+- Installed UV and LLM tools
+- Connected Gemini and GPT models
+- Ran AI commands directly from terminal
+
+
 
