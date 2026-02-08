@@ -112,4 +112,4 @@ git push -u origin main
 
 ---
 
-## ✅ Session 2 Completed 🎉
+##  Session 2 Completed 🎉
