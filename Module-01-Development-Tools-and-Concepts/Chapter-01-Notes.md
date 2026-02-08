@@ -1,120 +1,101 @@
-📘 Chapter 1 – Foundation
-🖥️ Week 1 – Session 1: WSL (Ubuntu) Installation Guide
+# 📘 Chapter 1 – Foundation  
+## Week 1 – Session 1  
+## Installing WSL with Ubuntu on Windows
 
-This session covers installing Windows Subsystem for Linux (WSL) and setting up Ubuntu 24.04 LTS on Windows.
+In this session, we set up a Linux environment on Windows using Windows Subsystem for Linux (WSL) and install the Ubuntu distribution.
 
-✅ Method 1 — Automatic Installation (Recommended & Easiest)
-Step 1 — Open PowerShell as Administrator
+---
 
-Press:
+## Step 1: Turn on Required Windows Features
+
+Open the Control Panel and navigate to:
+
+```text
+Programs → Turn Windows features on or off
 ```
-Win + X → Windows Terminal (Admin)
-``
-Step 2 — Run WSL Install Command
-```
+
+From the list, enable:
+
+- Virtual Machine Platform  
+- Windows Hypervisor Platform  
+- Windows Subsystem for Linux  
+
+Apply the changes and restart your system.
+
+---
+
+## Step 2: Install WSL
+
+After the system reboots, open PowerShell with administrator privileges and execute:
+
+```powershell
 wsl --install
 ```
 
-This command automatically:
+This command downloads and configures WSL automatically.
 
-Enables required Windows features
+---
 
-Installs WSL
+## Step 3: Confirm WSL Installation
 
-Installs Ubuntu
+To make sure WSL is installed correctly, run:
 
-Sets WSL 2 as default
-
-Step 3 — Restart PC
-
-After installation, restart your system.
-
-Step 4 — Create Linux User
-
-When Ubuntu opens:
-```
-Enter new UNIX username: Lakshmi
-Enter password:
-Confirm password:
-```
-Step 5 — Verify Installation
-
-Run:
-```
+```powershell
 wsl --version
 ```
-Step 6 — Start Ubuntu
 
-You can launch Ubuntu using:
-```
-Start Menu → Ubuntu
-```
-OR
-```
-wsl
-```
+If the version details are displayed, the installation was successful.
 
-🎉 Setup Complete!
+---
 
-✅ Method 2 — Manual Installation (Alternate Way)
+## Step 4: Check Available Linux Distributions
 
-Use this method if automatic installation fails.
+To view the list of Linux distributions that can be installed:
 
-Step 1 — Enable Windows Features
-
-Open:
-```
-Control Panel → Programs → Turn Windows features on or off
-```
-
-Enable:
-
-✔ Virtual Machine Platform
-
-✔ Windows Hypervisor Platform
-
-✔ Windows Subsystem for Linux
-
-Click OK and restart PC.
-
-Step 2 — Install WSL
-
-Open PowerShell (Admin):
-```
-wsl --set-default-version 2
-```
-Step 3 — Check Available Distributions
-```
+```powershell
 wsl --list --online
 ```
-Step 4 — Install Ubuntu 24.04 (LTS)
-```
+
+---
+
+## Step 5: Install Ubuntu (LTS Release)
+
+Install the latest Ubuntu LTS version using:
+
+```powershell
 wsl --install ubuntu-24.04
 ```
 
-Step 5 — Verify
-```
-wsl --version
-```
-🔧 Useful Commands
-List installed distributions
-```
-wsl -l -v
-```
+Wait until the download and setup process completes.
 
-Start Ubuntu
-```
+---
+
+## Step 6: Set Up User Account
+
+When Ubuntu launches for the first time, create your login credentials:
+
+- Enter a username  
+- Set a password  
+- Confirm the password  
+
+These credentials will be used for future Linux sessions.
+
+---
+
+## Step 7: Launch Ubuntu
+
+Ubuntu can now be accessed anytime using:
+
+```powershell
 wsl
 ```
-Shutdown WSL
-```
-wsl --shutdown
+
+or by opening:
+
+```text
+Start Menu → Ubuntu
 ```
 
-Update Ubuntu packages
-```
-sudo apt update && sudo apt upgrade
-```
+---
 
-
-✅ Session 1 Completed 🎉
+## ✅ Session 1 Completed
