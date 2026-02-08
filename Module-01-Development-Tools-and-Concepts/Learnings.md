@@ -42,13 +42,13 @@ From this session, I learned how to use Linux inside Windows using WSL.
 Now I can use Ubuntu inside Windows for development and practice Linux commands easily without installing a separate OS.
 
 
-# 📚 Chapter 2 – Development Environment Setup
+## Chapter 2 – Development Environment Setup
 
 In this session, I learned how to work inside the Ubuntu environment installed using WSL and how to manage projects using Git and GitHub.
 
 ---
 
-## 🔹 Concepts Learned
+##  Concepts Learned
 
 - What WSL update is and why it is important
 - How Ubuntu runs inside Windows
@@ -57,7 +57,7 @@ In this session, I learned how to work inside the Ubuntu environment installed u
 
 ---
 
-## 🔹 Linux Skills Learned
+##  Linux Skills Learned
 
 - Navigating directories using cd, ls, pwd
 - Creating folders and files
@@ -66,7 +66,7 @@ In this session, I learned how to work inside the Ubuntu environment installed u
 
 ---
 
-## 🔹 Git Skills Learned
+##  Git Skills Learned
 
 - Initializing a repository using git init
 - Adding files using git add
@@ -76,7 +76,7 @@ In this session, I learned how to work inside the Ubuntu environment installed u
 
 ---
 
-## 🔹 Practical Understanding
+##  Practical Understanding
 
 - How to open Ubuntu using WSL
 - How to maintain and update the system
@@ -85,7 +85,7 @@ In this session, I learned how to work inside the Ubuntu environment installed u
 
 ---
 
-## 🔹 Outcome
+##  Outcome
 
 Now I am comfortable:
 - Working in the Linux terminal
