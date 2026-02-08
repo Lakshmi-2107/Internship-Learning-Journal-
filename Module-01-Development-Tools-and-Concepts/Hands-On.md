@@ -54,7 +54,7 @@ sudo apt upgrade -y
 - Linux terminal working inside Windows
 
 
-# 🛠️ Chapter 2 – Development Environment Setup
+## Chapter 2 – Development Environment Setup
 
 In this session, I practically worked with WSL, Ubuntu, and Git commands to get comfortable using the Linux environment and version control.
 
@@ -143,7 +143,7 @@ Initialized repository and pushed code to GitHub.
 
 ---
 
-## ✅ Result
+## Result
 
 - WSL updated successfully  
 - Ubuntu running properly  
