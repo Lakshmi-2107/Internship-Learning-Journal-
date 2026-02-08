@@ -1,5 +1,6 @@
-# 📘 Session 2 – Week 1
-## Linux Usage, WSL Update & Git Workflow
+# 📘 Chapter 2 – Development Environment Setup
+## Week 1 – Session 2
+
 
 In this session, the goal is to start using the Ubuntu environment installed through WSL, update the system, and learn Git and GitHub workflow for version control.
 
