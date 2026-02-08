@@ -1,57 +1,97 @@
 # 🛠️ Hands-On Practice
+## Chapter 1 – Week 1 – Session 1
+## WSL & Ubuntu Setup
 
-## Chapter 1 – WSL & Ubuntu Setup
-
-In this session, I practically installed and tested WSL and Ubuntu.
+In this session, I practically installed WSL, configured Ubuntu, and verified that the Linux environment works correctly inside Windows.
 
 ---
 
-## Commands Executed
-
-Checked WSL version:
+##  Checked WSL availability
 
 ```powershell
 wsl --version
 ```
 
-Installed WSL:
+Initially, the command was not recognized.
+
+---
+
+##  Installed WSL manually using MSI
 
 ```powershell
-wsl --install
+msiexec /package wsl.2.6.3.0.x64.msi
 ```
 
-Listed distributions:
+This installed the WSL engine successfully.
+
+---
+
+##  Verified WSL installation
+
+```powershell
+wsl --version
+```
+
+WSL version details were displayed.
+
+---
+
+##  Set default version to WSL 2
+
+```powershell
+wsl --set-default-version 2
+```
+
+---
+
+##  Listed available distributions
 
 ```powershell
 wsl --list --online
 ```
 
-Installed Ubuntu:
+Viewed all supported Linux distributions.
+
+---
+
+##  Installed Ubuntu
 
 ```powershell
 wsl --install ubuntu-24.04
 ```
 
-Started Ubuntu:
+Ubuntu downloaded and installed successfully.
+
+---
+
+##  Started Ubuntu
 
 ```powershell
 wsl
 ```
 
-Updated packages inside Ubuntu:
+Ubuntu terminal opened and asked to create username and password.
+
+---
+
+##  Updated Ubuntu packages
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
+System packages updated successfully.
+
 ---
 
-## Result
+##  Result
 
 - WSL installed successfully
-- Ubuntu launched correctly
-- Linux terminal working inside Windows
+- Ubuntu installed and configured
+- Linux terminal running inside Windows
+- Ready to use for development
+
 
 
 ## Chapter 2 – Development Environment Setup
