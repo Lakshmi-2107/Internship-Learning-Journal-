@@ -328,3 +328,59 @@ Received responses from AI models.
 
 
 
+## Chapter 4 – Week 1 – Session 4
+
+In this session, I set up my complete development environment on Windows using WSL (Ubuntu). I installed the required tools and configured Python, Git, UV, and LLM CLI for project development and automation.
+
+---
+
+## Tasks Performed
+
+- Opened Ubuntu using WSL
+- Installed VS Code on Windows
+- Connected VS Code with WSL terminal
+- Installed Python and pip inside Ubuntu
+- Installed pyenv for Python version management
+- Installed UV for project management
+- Initialized a new project using uv init
+- Added and removed Python packages
+- Installed GitHub CLI
+- Created repository from terminal
+- Installed LLM CLI tool
+- Configured API keys
+- Tested AI prompts from terminal
+
+---
+
+## Commands Practiced
+
+Started WSL:
+wsl
+
+Initialize project:
+uv init
+
+Add package:
+uv add flask
+
+Remove package:
+uv remove flask
+
+Git workflow:
+git add .
+git commit -m "first commit"
+gh repo create
+
+Run LLM:
+llm "Hello"
+
+---
+
+## Result
+
+- Development environment ready inside WSL
+- Python versions managed properly
+- Dependencies handled using UV
+- GitHub repositories managed from terminal
+- AI tools working from command line
+
