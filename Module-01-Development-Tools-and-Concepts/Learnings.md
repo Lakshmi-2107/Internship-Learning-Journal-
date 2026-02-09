@@ -186,6 +186,53 @@ This session improved my confidence in Linux usage and automation-based developm
 
 ---
 
+## Chapter 4 – Week 1 – Session 4
+
+This session helped me understand how to set up a professional development environment on Windows using WSL and command-line tools.
+
+---
+
+## Concepts Learned
+
+- Importance of Linux environment for development
+- Using WSL to run Ubuntu inside Windows
+- Role of package managers (apt, winget)
+- Python version management using pyenv
+- Dependency management using UV
+- Git workflow and repository management
+- Using AI tools directly from terminal
+
+---
+
+## Skills Gained
+
+- Installed and configured VS Code with WSL
+- Managed Python versions using pyenv
+- Created isolated Python projects using UV
+- Installed and removed packages easily
+- Used GitHub CLI to create and manage repositories
+- Set environment variables for API keys
+- Ran AI models using LLM CLI
+- Performed most tasks using terminal instead of GUI
+
+---
+
+## Outcome
+
+Now I can:
+
+- Work comfortably inside Ubuntu (WSL)
+- Manage Python projects efficiently
+- Use Git and GitHub from terminal
+- Install tools using command line
+- Use AI models for development tasks
+- Build and manage projects in a professional workflow
+
+This setup improves productivity and prepares me for real-world development work.
+
+---
+
+
 
 
 
