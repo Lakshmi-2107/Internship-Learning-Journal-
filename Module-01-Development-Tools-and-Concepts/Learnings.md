@@ -233,6 +233,56 @@ This setup improves productivity and prepares me for real-world development work
 ---
 
 
+## Chapter 5 – Week 1 – Session 5
+
+This session helped me understand Git and GitHub practically and how version control is used in real projects.
+
+---
+
+## Concepts Learned
+
+- What version control is
+- Difference between Git and GitHub
+- Local vs remote repositories
+- SSH authentication
+- Cloning repositories
+- Git commit workflow
+- Common Git errors and fixes
+- Importance of Linux/WSL for development
+- Role of GitHub Copilot
+
+---
+
+## Skills Gained
+
+- Installed Git successfully
+- Generated and configured SSH keys
+- Connected local machine to GitHub securely
+- Cloned repositories
+- Added, committed, and pushed changes
+- Managed projects using Git commands
+- Troubleshot permission errors
+- Used Copilot for faster coding
+
+---
+
+## Outcome
+
+Now I can:
+
+- Use Git confidently
+- Manage repositories from terminal
+- Push and pull code from GitHub
+- Collaborate with others
+- Track project history
+- Maintain clean version control workflow
+
+This session improved my development workflow and prepared me for real-world collaboration.
+
+---
+
+##  Learnings Completed 🎉
+
 
 
 
