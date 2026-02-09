@@ -384,3 +384,59 @@ llm "Hello"
 - GitHub repositories managed from terminal
 - AI tools working from command line
 
+
+## Chapter 5 – Week 1 – Session 5
+
+In this session, I configured Git and GitHub, set up SSH authentication, cloned a repository, and practiced pushing local changes.
+
+---
+
+## Tasks Performed
+
+- Installed Git inside WSL
+- Created GitHub account
+- Created new repository
+- Generated SSH key
+- Added public key to GitHub
+- Tested SSH connection
+- Cloned repository locally
+- Created new files
+- Added and committed changes
+- Pushed code to GitHub
+- Fixed permission and connection errors
+- Used GitHub Copilot to generate code
+- Pushed generated code
+
+---
+
+## Commands Practiced
+
+Generate SSH key:
+ssh-keygen
+
+Clone repo:
+git clone <repo-url>
+
+Check status:
+git status
+
+Stage files:
+git add .
+
+Commit:
+git commit -m "message"
+
+Push:
+git push
+
+---
+
+## Result
+
+- SSH connection established successfully
+- Repository cloned locally
+- Changes committed and pushed
+- GitHub workflow understood
+- Version control working correctly
+
+## Hands-On Completed!🎉
