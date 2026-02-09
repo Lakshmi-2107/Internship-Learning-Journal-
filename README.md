@@ -41,9 +41,13 @@ Course Link: https://tds.s-anand.net/#/
 ---
 
 ## 🚀 Key Learnings So Far
-- (Update weekly)
-- Example: Understood system architecture basics
-- Example: Learned how APIs work
+During Week 1, I successfully set up a complete Linux-based development environment on Windows using WSL and Ubuntu. I learned how to work confidently in the terminal, navigate the Linux file system, and manage system packages using apt.
+
+I configured Python projects using pyenv and UV for version and dependency management, and practiced Git and GitHub workflows such as creating repositories, cloning, committing, pushing code, and setting up SSH authentication.
+
+I also explored modern development tools like VS Code and LLM CLI to improve productivity and interact with AI models directly from the command line.
+
+Overall, I am now comfortable using Linux, Git, Python tools, and terminal-based workflows for efficient and professional software development.
 
 ---
 
