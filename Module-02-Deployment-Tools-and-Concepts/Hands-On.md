@@ -203,3 +203,164 @@ http://localhost:5000
 
 ---
 
+## Week 2 – Chapter 2 – Session 2
+## Podman, GitHub Pages, FastAPI, Vercel & Deployment Tools
+
+In this session, I practically explored modern development and deployment tools. I worked with containers, built APIs using FastAPI, hosted static websites using GitHub Pages, deployed apps using Vercel, exposed local servers using ngrok, and learned how to securely manage API keys.
+
+---
+
+## Podman Practice
+
+Verified Podman installation:
+
+```bash
+podman --version
+```
+
+Ran a test container:
+
+```bash
+podman run alpine echo "Podman working"
+```
+
+Listed images:
+
+```bash
+podman images
+```
+
+Listed running containers:
+
+```bash
+podman ps
+```
+
+Stopped containers:
+
+```bash
+podman stop <container-name>
+```
+
+Removed containers:
+
+```bash
+podman rm <container-name>
+```
+
+---
+
+##  GitHub Pages Practice
+
+- Created a GitHub repository
+- Added HTML, CSS files
+- Enabled GitHub Pages from repository settings
+- Pushed changes to GitHub
+- Verified that website automatically deployed
+- Accessed live site using GitHub Pages URL
+
+Outcome:
+Static site successfully hosted online.
+
+---
+
+##  FastAPI Practice
+
+Installed FastAPI:
+
+```bash
+pip install fastapi uvicorn
+```
+
+Created simple API server.
+
+Started server:
+
+```bash
+uvicorn app:app --reload
+```
+
+Tested API:
+- GET requests
+- POST requests
+- Checked auto-generated docs
+
+Accessed:
+```
+http://localhost:8000
+```
+
+---
+
+##  Vercel Deployment Practice
+
+Installed Vercel CLI:
+
+```bash
+npm install -g vercel
+```
+
+Logged in and deployed project:
+
+```bash
+vercel
+```
+
+Connected GitHub repository to Vercel for automatic deployment.
+
+Verified:
+- App deployed successfully
+- Changes auto-updated on push
+
+---
+
+##  ngrok Practice
+
+Started local Flask/FastAPI server.
+
+Exposed server:
+
+```bash
+ngrok http 5000
+```
+
+Received public URL.
+
+Shared link and accessed app from browser.
+
+---
+
+##  Environment Variables Practice
+
+Set API key:
+
+```bash
+export OPENAI_API_KEY=your_key_here
+```
+
+Accessed inside Python using `os.getenv()`.
+
+Verified that secrets were not stored in code.
+
+---
+
+##  CORS Testing
+
+- Connected frontend to backend
+- Faced cross-origin issue
+- Enabled CORS
+- Confirmed requests worked properly
+
+---
+
+##  Outcome
+
+- Containers ran successfully
+- Static site hosted online
+- API server created and tested
+- App deployed on Vercel
+- Local server exposed with ngrok
+- Secrets stored securely
+- Understood frontend-backend communication
+
+---
