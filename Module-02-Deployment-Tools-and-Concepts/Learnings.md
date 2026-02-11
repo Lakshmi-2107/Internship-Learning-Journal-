@@ -84,3 +84,96 @@ After this session, I am confident in:
 This knowledge prepares me for real-world development and deployment workflows used in modern software and AI projects.
 
 ---
+
+## Week 2 – Chapter 2 – Session 2
+## Deployment & Modern Web Development Tools
+
+This session helped me understand modern tools and workflows used in real-world application deployment and backend development.
+
+---
+
+##  Concepts Learned
+
+- What containers are and how they differ from virtual machines
+- How Podman isolates applications efficiently
+- Static website hosting using GitHub Pages
+- API development using FastAPI
+- Deploying apps to cloud using Vercel
+- Exposing local servers using ngrok
+- Managing secrets with environment variables
+- Understanding CORS and cross-origin security
+
+---
+
+##  Technical Knowledge Gained
+
+### Podman
+- Running containers
+- Managing images
+- Isolating environments
+
+### GitHub Pages
+- Hosting static sites
+- Automatic deployment on push
+
+### FastAPI
+- Creating APIs quickly
+- Handling HTTP requests
+- Running asynchronous servers
+
+### Vercel
+- Cloud deployment
+- GitHub integration
+- Serverless functions
+
+### ngrok
+- Creating public tunnels
+- Testing local apps externally
+
+### Security
+- Protecting API keys
+- Using environment variables
+- Avoiding hardcoded secrets
+
+---
+
+## Skills Gained
+
+- Used Podman to manage containers
+- Hosted websites using GitHub Pages
+- Built and tested REST APIs using FastAPI
+- Deployed applications to cloud platforms
+- Shared local projects publicly using ngrok
+- Secured applications with environment variables
+- Handled CORS issues
+
+---
+
+##  Practical Understanding
+
+Now I understand that:
+
+- Containers simplify deployment
+- Static sites can be hosted easily
+- APIs power modern applications
+- Cloud platforms automate deployment
+- Environment variables improve security
+- These tools are widely used in industry
+
+---
+
+##  Outcome
+
+After this session, I am confident in:
+
+- Running applications in containers
+- Hosting websites online
+- Building backend APIs
+- Deploying apps to cloud
+- Managing secrets securely
+- Debugging deployment issues
+
+This knowledge prepares me for real-world development and production workflows.
+
+---
+
