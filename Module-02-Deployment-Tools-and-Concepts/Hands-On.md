@@ -364,3 +364,171 @@ Verified that secrets were not stored in code.
 - Understood frontend-backend communication
 
 ---
+
+## Week 2 – Chapter 3 – Session 3
+## GitHub Actions, Codespaces & Cloud Automation
+
+In this session, I practically worked with GitHub automation tools and cloud-based development platforms. I created workflows, tested automated jobs, used Codespaces for development, and explored deployment using online hosting services.
+
+---
+
+##  GitHub Actions Setup
+
+Created workflow folder:
+
+```
+.github/workflows/
+```
+
+Added workflow file:
+
+```
+automation.yml
+```
+
+---
+
+##  Created First Workflow
+
+Basic workflow to run on every push.
+
+```yaml
+name: Test Workflow
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Workflow executed successfully"
+```
+
+### Result
+- Workflow triggered automatically after push
+- Checked execution logs in GitHub Actions tab
+- Verified job completed successfully
+
+---
+
+##  Practiced Scheduled Workflow
+
+Created a scheduled job using cron timing.
+
+```yaml
+on:
+  schedule:
+    - cron: "0 0 * * *"
+```
+
+### Activity performed
+- Simulated daily execution
+- Ran Python script automatically
+- Generated JSON output file
+- Observed automatic commit
+
+### Learning
+Understood how GitHub can run tasks without manual execution.
+
+---
+
+##  Automatic Commit Practice
+
+Added steps to save changes automatically.
+
+```bash
+git config --global user.name "github-actions"
+git config --global user.email "actions@github.com"
+git add .
+git commit -m "Auto update"
+git push
+```
+
+### Result
+- File updated automatically
+- Changes pushed to repository without manual action
+
+---
+
+##  Used GitHub Codespaces
+
+Steps performed:
+- Opened repository in Codespaces
+- Developed directly in browser
+- Edited files
+- Installed dependencies
+- Ran scripts
+
+### Observations
+- No local setup required
+- Faster startup
+- Same environment every time
+
+---
+
+##  Practiced GitHub Pages
+
+Steps:
+- Created static HTML page
+- Pushed to repository
+- Enabled GitHub Pages in settings
+- Verified live site
+
+### Result
+Website hosted successfully using GitHub link.
+
+---
+
+## Explored Hugging Face Spaces
+
+Steps:
+- Created new Space
+- Connected GitHub repo
+- Pushed app files
+- Deployed automatically
+
+### Result
+App went live without manual server setup.
+
+---
+
+##  Tested Workflow Logs
+
+Checked:
+- job status
+- execution time
+- errors
+- success messages
+
+Learned how to debug workflows using logs.
+
+---
+
+##  Commands Practiced
+
+Inline commands used during session:
+
+`git add .`  
+`git commit -m "message"`  
+`git push`  
+
+---
+
+## Outcome
+
+By the end of the session, I was able to:
+
+- create GitHub workflows
+- automate tasks on push
+- schedule jobs using cron
+- commit files automatically
+- develop using Codespaces
+- host static sites using GitHub Pages
+- deploy apps using Spaces
+- monitor workflow logs
+
+This hands-on practice helped me understand real-world CI/CD automation.
+
+--
