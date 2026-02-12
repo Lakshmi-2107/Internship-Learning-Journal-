@@ -177,3 +177,126 @@ This knowledge prepares me for real-world development and production workflows.
 
 ---
 
+## Week 2 – Chapter 3 – Session 3
+## GitHub Actions, Workflows & Cloud Development Tools
+
+In this session, I learned how modern software projects automate development tasks using GitHub tools and cloud platforms. Instead of doing everything manually, workflows can automatically test, build, deploy, and update projects. This makes development faster, more reliable, and more professional.
+
+---
+
+##  Concepts I Understood
+
+### Automation
+- Repetitive tasks can be handled automatically
+- Reduces human errors
+- Saves time and effort
+- Improves productivity
+
+---
+
+### GitHub Actions
+- Used to automate tasks inside a repository
+- Runs workflows when events occur
+- Can test, deploy, or update code automatically
+- Works using YAML configuration files
+
+---
+
+### Workflows
+- Stored inside `.github/workflows/`
+- Define when and how tasks run
+- Include triggers, jobs, and steps
+- Can run on push, pull request, or schedule
+
+---
+
+### Continuous Integration (CI)
+- Runs tests automatically
+- Checks code quality
+- Detects bugs early
+- Keeps project stable
+
+---
+
+### Continuous Deployment (CD)
+- Automatically deploys apps after testing
+- Reduces manual deployment
+- Speeds up release process
+
+---
+
+### Scheduled Jobs
+- Run automatically at fixed times
+- Useful for daily tasks
+- Can fetch data or update files
+- Similar to cron jobs
+
+---
+
+### GitHub Codespaces
+- Cloud-based development environment
+- No local installation needed
+- Works in browser
+- Same setup for everyone
+- Quick and convenient for collaboration
+
+---
+
+### GitHub Pages
+- Hosts static websites
+- Easy to deploy HTML/CSS/JS projects
+- Updates automatically when code is pushed
+- Good for portfolios and documentation
+
+---
+
+### Hugging Face Spaces
+- Quick hosting for AI/ML applications
+- Git-based deployment
+- No server management
+- Useful for demos and experiments
+
+---
+
+##  Skills I Gained
+
+After this session, I can:
+
+- create workflow YAML files
+- automate tasks on every push
+- schedule jobs using cron
+- monitor workflow logs
+- debug failed jobs
+- develop using Codespaces
+- host static sites on GitHub Pages
+- deploy apps easily using Spaces
+- understand CI/CD pipeline
+
+---
+
+##  Practical Understanding
+
+Now I clearly understand that:
+
+- automation reduces manual work
+- workflows make projects more efficient
+- CI/CD is important in real-world development
+- cloud tools simplify deployment
+- modern teams rely heavily on these tools
+
+These skills are useful for internships, team projects, and production environments.
+
+---
+
+##  Final Outcome
+
+This session improved my confidence in:
+
+- project automation
+- deployment practices
+- cloud-based development
+- professional workflows
+
+I can now build, test, and deploy applications more efficiently using modern tools.
+
+---
