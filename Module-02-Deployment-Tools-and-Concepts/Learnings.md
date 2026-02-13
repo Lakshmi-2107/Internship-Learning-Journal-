@@ -308,7 +308,7 @@ Instead of only learning theory, we practiced building a real server and prepari
 
 ---
 
-# 🔹 Core Concepts Learned
+#  Core Concepts Learned
 
 ##  FastAPI Basics
 
