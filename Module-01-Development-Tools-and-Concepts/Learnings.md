@@ -124,7 +124,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 Concepts Learned
+##  Concepts Learned
 
 - How the computer boot process works (BIOS/UEFI → OS loading)
 - What a hypervisor is and how it manages hardware resources
@@ -134,7 +134,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 Linux Knowledge Gained
+##  Linux Knowledge Gained
 
 - Root directory structure (/)
 - Important folders like /home, /mnt, /bin, /etc
@@ -144,7 +144,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 Terminal Skills Learned
+##  Terminal Skills Learned
 
 - Navigating folders using commands
 - Managing files and directories
@@ -153,7 +153,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 Development Skills Learned
+##  Development Skills Learned
 
 - Using VS Code with WSL
 - Opening projects directly from terminal
@@ -163,7 +163,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 AI Tool Knowledge
+##  AI Tool Knowledge
 
 - Installing LLM CLI tool
 - Setting API keys securely
@@ -173,7 +173,7 @@ In this session, I gained a deeper understanding of how Linux works inside Windo
 
 ---
 
-## 🔹 Outcome
+##  Outcome
 
 Now I am comfortable:
 - Working inside Ubuntu (WSL)
