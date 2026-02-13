@@ -310,7 +310,7 @@ Instead of only learning theory, we practiced building a real server and prepari
 
 # 🔹 Core Concepts Learned
 
-## ✅ FastAPI Basics
+##  FastAPI Basics
 
 - FastAPI is a modern Python framework to build APIs
 - Very fast and lightweight
@@ -326,7 +326,7 @@ I learned how to:
 
 ---
 
-## ✅ GET Requests
+##  GET Requests
 
 Used to fetch data from the server.
 
@@ -342,7 +342,7 @@ Example use:
 
 ---
 
-## ✅ Path Parameters
+##  Path Parameters
 
 Path parameters make URLs dynamic.
 
@@ -358,7 +358,7 @@ Learned:
 
 ---
 
-## ✅ Query Parameters
+##  Query Parameters
 
 Query parameters allow optional inputs.
 
@@ -378,7 +378,7 @@ Difference:
 
 ---
 
-## ✅ Pydantic Validation
+##  Pydantic Validation
 
 Pydantic handles request validation automatically.
 
@@ -395,7 +395,7 @@ Benefits:
 
 ---
 
-## ✅ POST Requests
+##  POST Requests
 
 Used to send data to the server.
 
@@ -412,7 +412,7 @@ Use cases:
 
 ---
 
-## ✅ File Uploads
+##  File Uploads
 
 Learned how to upload:
 
@@ -432,7 +432,7 @@ This is important for real-world apps.
 
 ---
 
-## ✅ API Testing with curl
+##  API Testing with curl
 
 curl helps test APIs from terminal.
 
@@ -446,7 +446,7 @@ Now I can test endpoints without UI.
 
 ---
 
-## ✅ Automated Testing Scripts
+##  Automated Testing Scripts
 
 Instead of manual testing:
 
@@ -461,7 +461,7 @@ This improves:
 
 ---
 
-## ✅ Environment Variables & Secrets
+##  Environment Variables & Secrets
 
 Learned not to hardcode keys.
 
@@ -481,7 +481,7 @@ Important for:
 
 ---
 
-## ✅ Docker Basics
+##  Docker Basics
 
 Docker packages the app into a container.
 
@@ -501,7 +501,7 @@ Very useful for production systems.
 
 ---
 
-## ✅ Deployment Concepts
+##  Deployment Concepts
 
 Learned:
 - hosting API online
@@ -516,24 +516,24 @@ This is real-world backend workflow.
 
 ---
 
-# 🔹 Skills Gained
+#  Skills Gained
 
 After this session, I can:
 
-✅ Build a FastAPI server  
-✅ Create GET/POST endpoints  
-✅ Use path & query parameters  
-✅ Validate data using Pydantic  
-✅ Upload files  
-✅ Test APIs using curl  
-✅ Automate testing  
-✅ Use environment variables  
-✅ Dockerize application  
-✅ Deploy backend online  
+-Build a FastAPI server  
+-Create GET/POST endpoints  
+ -Use path & query parameters  
+ -Validate data using Pydantic  
+ -Upload files  
+ -Test APIs using curl  
+ -Automate testing  
+ -Use environment variables  
+ -Dockerize application  
+ -Deploy backend online  
 
 ---
 
-# 🔹 Challenges Faced
+#  Challenges Faced
 
 - Understanding request vs response flow
 - Debugging POST JSON format
@@ -548,7 +548,7 @@ Solved by:
 
 ---
 
-# 🔹 Real-World Importance
+#  Real-World Importance
 
 These skills are used in:
 
@@ -563,7 +563,7 @@ FastAPI + Docker is widely used in startups and production systems.
 
 ---
 
-# 🔹 Personal Takeaway
+#  Personal Takeaway
 
 This session helped me move from:
 
