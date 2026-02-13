@@ -532,3 +532,293 @@ By the end of the session, I was able to:
 This hands-on practice helped me understand real-world CI/CD automation.
 
 --
+  
+## Chapter 4  – Session 4
+## FastAPI Workflow, Testing & Deployment Lab
+
+This hands-on guide helps you practically implement everything learned in this session.
+
+By the end, you will:
+
+✅ Build a FastAPI server  
+✅ Create GET & POST endpoints  
+✅ Validate data using Pydantic  
+✅ Upload files  
+✅ Test using curl  
+✅ Use environment variables  
+✅ Dockerize the app  
+✅ Deploy online  
+
+---
+
+# 🔹 Step 1 – Create Project Folder
+
+```bash
+mkdir fastapi-project
+cd fastapi-project
+```
+
+---
+
+# 🔹 Step 2 – Install Dependencies
+
+```bash
+pip install fastapi uvicorn python-multipart python-dotenv
+```
+
+---
+
+# 🔹 Step 3 – Create main.py
+
+Create file:
+
+```bash
+touch main.py
+```
+
+Paste:
+
+```python
+from fastapi import FastAPI, UploadFile, File
+from pydantic import BaseModel
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+app = FastAPI()
+
+class User(BaseModel):
+    name: str
+    age: int
+
+@app.get("/")
+def home():
+    return {"message": "Server running"}
+
+@app.get("/items/{item_id}")
+def get_item(item_id: int):
+    return {"id": item_id}
+
+@app.get("/search")
+def search(q: str = ""):
+    return {"query": q}
+
+@app.post("/users")
+def create_user(user: User):
+    return user
+
+@app.post("/upload")
+async def upload_file(file: UploadFile = File(...)):
+    return {"filename": file.filename}
+```
+
+---
+
+# 🔹 Step 4 – Run Server
+
+```bash
+uvicorn main:app --reload
+```
+
+Open browser:
+
+```
+http://127.0.0.1:8000
+```
+
+Docs:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+Test APIs directly from Swagger UI.
+
+---
+
+# 🔹 Step 5 – Test Using curl
+
+## GET
+
+```bash
+curl http://127.0.0.1:8000/
+```
+
+## Path parameter
+
+```bash
+curl http://127.0.0.1:8000/items/10
+```
+
+## Query parameter
+
+```bash
+curl "http://127.0.0.1:8000/search?q=fastapi"
+```
+
+## POST request
+
+```bash
+curl -X POST http://127.0.0.1:8000/users \
+-H "Content-Type: application/json" \
+-d '{"name":"Lakshmi","age":22}'
+```
+
+---
+
+# 🔹 Step 6 – File Upload Test
+
+```bash
+curl -X POST http://127.0.0.1:8000/upload \
+-F "file=@sample.txt"
+```
+
+---
+
+# 🔹 Step 7 – Automate Testing Script
+
+Create:
+
+```bash
+touch test.sh
+```
+
+Paste:
+
+```bash
+curl http://127.0.0.1:8000/
+curl http://127.0.0.1:8000/items/5
+curl -X POST http://127.0.0.1:8000/users -H "Content-Type: application/json" -d '{"name":"Test","age":20}'
+```
+
+Run:
+
+```bash
+bash test.sh
+```
+
+---
+
+# 🔹 Step 8 – Add Environment Variables
+
+Create:
+
+```bash
+touch .env
+```
+
+Add:
+
+```
+API_KEY=123456
+```
+
+Update main.py:
+
+```python
+key = os.getenv("API_KEY")
+```
+
+Never hardcode secrets.
+
+---
+
+# 🔹 Step 9 – Create requirements.txt
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+# 🔹 Step 10 – Create Dockerfile
+
+```bash
+touch Dockerfile
+```
+
+Paste:
+
+```dockerfile
+FROM python:3.10
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
+```
+
+---
+
+# 🔹 Step 11 – Build Docker Image
+
+```bash
+docker build -t fastapi-app .
+```
+
+Run container:
+
+```bash
+docker run -p 7860:7860 fastapi-app
+```
+
+Open:
+
+```
+http://localhost:7860
+```
+
+---
+
+# 🔹 Step 12 – Deploy Online
+
+Deploy to any platform:
+
+Options:
+
+- Hugging Face Spaces
+- Render
+- Railway
+- Docker server
+
+Upload:
+
+- main.py
+- requirements.txt
+- Dockerfile
+
+After deployment, you get:
+
+```
+https://yourapp-url
+```
+
+Test:
+
+```bash
+curl https://yourapp-url
+```
+
+---
+
+
+# 🔹 Final Checklist
+
+Before submission:
+
+✅ Server runs  
+✅ All endpoints work  
+✅ curl tests pass  
+✅ requirements.txt created  
+✅ Dockerfile works  
+✅ App deployed  
+✅ Public URL accessible  
+
+---
+
+##  Hands-On Practice Completed 🎉
