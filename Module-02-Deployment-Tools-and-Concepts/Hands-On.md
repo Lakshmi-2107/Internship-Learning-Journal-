@@ -540,18 +540,18 @@ This hands-on guide helps you practically implement everything learned in this s
 
 By the end, you will:
 
-✅ Build a FastAPI server  
-✅ Create GET & POST endpoints  
-✅ Validate data using Pydantic  
-✅ Upload files  
-✅ Test using curl  
-✅ Use environment variables  
-✅ Dockerize the app  
-✅ Deploy online  
+- Build a FastAPI server  
+- Create GET & POST endpoints  
+- Validate data using Pydantic  
+- Upload files  
+- Test using curl  
+- Use environment variables  
+- Dockerize the app  
+- Deploy online  
 
 ---
 
-# 🔹 Step 1 – Create Project Folder
+#  Step 1 – Create Project Folder
 
 ```bash
 mkdir fastapi-project
@@ -560,7 +560,7 @@ cd fastapi-project
 
 ---
 
-# 🔹 Step 2 – Install Dependencies
+#  Step 2 – Install Dependencies
 
 ```bash
 pip install fastapi uvicorn python-multipart python-dotenv
@@ -568,7 +568,7 @@ pip install fastapi uvicorn python-multipart python-dotenv
 
 ---
 
-# 🔹 Step 3 – Create main.py
+#  Step 3 – Create main.py
 
 Create file:
 
@@ -615,7 +615,7 @@ async def upload_file(file: UploadFile = File(...)):
 
 ---
 
-# 🔹 Step 4 – Run Server
+#  Step 4 – Run Server
 
 ```bash
 uvicorn main:app --reload
@@ -637,7 +637,7 @@ Test APIs directly from Swagger UI.
 
 ---
 
-# 🔹 Step 5 – Test Using curl
+#  Step 5 – Test Using curl
 
 ## GET
 
@@ -667,7 +667,7 @@ curl -X POST http://127.0.0.1:8000/users \
 
 ---
 
-# 🔹 Step 6 – File Upload Test
+#  Step 6 – File Upload Test
 
 ```bash
 curl -X POST http://127.0.0.1:8000/upload \
@@ -676,7 +676,7 @@ curl -X POST http://127.0.0.1:8000/upload \
 
 ---
 
-# 🔹 Step 7 – Automate Testing Script
+#  Step 7 – Automate Testing Script
 
 Create:
 
@@ -700,7 +700,7 @@ bash test.sh
 
 ---
 
-# 🔹 Step 8 – Add Environment Variables
+#  Step 8 – Add Environment Variables
 
 Create:
 
@@ -724,7 +724,7 @@ Never hardcode secrets.
 
 ---
 
-# 🔹 Step 9 – Create requirements.txt
+#  Step 9 – Create requirements.txt
 
 ```bash
 pip freeze > requirements.txt
@@ -732,7 +732,7 @@ pip freeze > requirements.txt
 
 ---
 
-# 🔹 Step 10 – Create Dockerfile
+#  Step 10 – Create Dockerfile
 
 ```bash
 touch Dockerfile
@@ -755,7 +755,7 @@ CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
 
 ---
 
-# 🔹 Step 11 – Build Docker Image
+#  Step 11 – Build Docker Image
 
 ```bash
 docker build -t fastapi-app .
@@ -775,7 +775,7 @@ http://localhost:7860
 
 ---
 
-# 🔹 Step 12 – Deploy Online
+#  Step 12 – Deploy Online
 
 Deploy to any platform:
 
@@ -807,17 +807,17 @@ curl https://yourapp-url
 ---
 
 
-# 🔹 Final Checklist
+#  Final Checklist
 
 Before submission:
 
-✅ Server runs  
-✅ All endpoints work  
-✅ curl tests pass  
-✅ requirements.txt created  
-✅ Dockerfile works  
-✅ App deployed  
-✅ Public URL accessible  
+- Server runs  
+- All endpoints work  
+- curl tests pass  
+- requirements.txt created  
+- Dockerfile works  
+- App deployed  
+- Public URL accessible  
 
 ---
 
