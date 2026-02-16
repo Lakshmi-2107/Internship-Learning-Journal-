@@ -49,6 +49,13 @@ I also explored modern development tools like VS Code and LLM CLI to improve pro
 
 Overall, I am now comfortable using Linux, Git, Python tools, and terminal-based workflows for efficient and professional software development.
 
+During Week 2, I developed a strong understanding of containerization, backend development, automation, and deployment workflows. I learned how to use Podman to run applications inside containers, manage volumes and networks, and isolate environments for consistent development.
+
+I built and tested REST APIs using FastAPI, handled routing, validation, and file uploads, and practiced testing endpoints using curl and automated scripts. I also containerized applications using Docker and understood how to deploy them to cloud platforms.
+
+Additionally, I explored GitHub Actions for workflow automation, implemented CI/CD concepts, hosted static sites using GitHub Pages, and deployed AI applications using modern cloud tools. I gained practical experience managing environment variables securely and debugging real-world deployment issues.
+
+Overall, I am now confident in building, containerizing, automating, and deploying modern backend applications using industry-standard tools and workflows.
 ---
 
 ## ❓ Doubts / Topics to Revisit
