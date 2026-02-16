@@ -56,7 +56,7 @@ I built and tested REST APIs using FastAPI, handled routing, validation, and fil
 Additionally, I explored GitHub Actions for workflow automation, implemented CI/CD concepts, hosted static sites using GitHub Pages, and deployed AI applications using modern cloud tools. I gained practical experience managing environment variables securely and debugging real-world deployment issues.
 
 Overall, I am now confident in building, containerizing, automating, and deploying modern backend applications using industry-standard tools and workflows.
----
+
 
 ## ❓ Doubts / Topics to Revisit
 - Topic 1  
