@@ -345,4 +345,262 @@ Evaluation prevents silent failures.
 
 ---
 
+#  Session 2  
+## Embeddings, Multimodal Systems & RAG Implementation
 
+This session focused on implementing embeddings, multimodal embeddings, vector databases, chunking strategies, and Retrieval-Augmented Generation (RAG). The emphasis was practical, demonstrating how these concepts are applied in Project 1.
+
+---
+
+#  1. Overview of Session
+
+This session covered:
+
+- Embeddings
+- Multimodal embeddings
+- Vector databases
+- Chunking techniques
+- Retrieval-Augmented Generation (RAG)
+- Deployment troubleshooting
+
+The session was code-heavy and implementation-focused.
+
+---
+
+#  2. Understanding Embeddings
+
+Embeddings are numerical vector representations of data.
+
+They:
+
+- Represent text in multi-dimensional space
+- Capture semantic meaning
+- Enable similarity comparison
+
+Embeddings are generally:
+
+- Cheaper than chat-based models
+- Faster for similarity tasks
+
+---
+
+#  3. Sentence Transformers
+
+Local embedding models can be used.
+
+Process:
+
+- Download model
+- Generate vector representation
+- Produce fixed-size vectors (e.g., 364 dimensions)
+
+This avoids API costs but requires local compute.
+
+---
+
+#  4. OpenAI Embeddings API
+
+Embeddings can also be generated via API.
+
+Model example:
+- `text-embedding-3-small`
+
+Workflow:
+
+1. Send text to embedding endpoint
+2. Receive vector output
+3. Store vector for similarity search
+
+HTTP libraries like `httpx` are used to send requests.
+
+---
+
+#  5. Cosine Similarity
+
+Cosine similarity measures how similar two vectors are.
+
+Formula idea:
+
+- Compute dot product
+- Normalize values
+- Output between 0 and 1
+
+Higher value → more similar.
+
+Example:
+
+- "apple and orange" vs "apple and lightning"
+- Similar fruits → higher score
+- Unrelated terms → lower score
+
+This enables semantic comparison.
+
+---
+
+#  6. Managing API Keys
+
+API keys should be stored securely.
+
+Methods:
+
+Temporary:
+```
+export API_KEY=your_key
+```
+
+Permanent:
+- Add to `.bashrc`
+
+This ensures availability across sessions.
+
+---
+
+#  7. Multimodal Embeddings
+
+Multimodal embeddings map:
+
+- Text
+- Images
+
+into the same vector space.
+
+This allows:
+
+- Comparing images with text
+- Matching content across formats
+- Cross-modal similarity search
+
+---
+
+#  8. Using Nomic AI
+
+Nomic AI provides multimodal embedding APIs.
+
+Steps:
+
+1. Create account
+2. Generate API key
+3. Send image/text
+4. Receive embedding vector
+
+Practical Example:
+
+- "cat" image vs "cat" text → high similarity
+- "cat" image vs "box" text → low similarity
+
+Useful for:
+
+- Image tagging
+- Visual search
+- Project 1 discourse Q&A
+
+---
+
+#  9. Vector Databases
+
+Vector databases store embeddings efficiently.
+
+Purpose:
+
+- Fast similarity retrieval
+- Nearest-neighbor search
+- Scalable embedding storage
+
+Used in:
+
+- Search systems
+- Recommendation engines
+- RAG pipelines
+
+---
+
+#  10. Chunking Large Documents
+
+LLMs have token limits.
+
+Solution: Chunking
+
+Chunking involves:
+
+- Splitting large documents
+- Keeping chunks under token limits
+- Assigning unique IDs
+
+Example:
+
+- Clone documentation repository
+- Split markdown files
+- Create 4096-token chunks
+- Generate embeddings per chunk
+
+This prepares data for retrieval.
+
+---
+
+#  11. Retrieval-Augmented Generation (RAG)
+
+RAG workflow:
+
+1. User asks question
+2. Generate embedding of question
+3. Compare with stored chunk embeddings
+4. Retrieve Top-K relevant chunks
+5. Send chunks + question to GPT
+6. Generate contextual response
+
+Top-K example:
+
+- Retrieve top 5 similar chunks
+
+Benefits:
+
+- Reduces hallucination
+- Improves accuracy
+- Cost-efficient (reuse embeddings)
+
+---
+
+#  12. Example – Asking a Question
+
+Query:
+"What is TypeScript?"
+
+Process:
+
+- Compute query embedding
+- Find similar documentation chunks
+- Pass relevant chunks to GPT
+- Generate detailed answer
+
+Only relevant context is sent to model.
+
+---
+
+#  13. Deployment Troubleshooting
+
+Common issues:
+
+- Repository not public
+- Incorrect deployment URL
+- Expired API tokens
+- Authentication errors
+
+Important:
+
+- Verify environment variables
+- Check public access
+- Complete time-sensitive questions last
+
+---
+
+#  14. Project 1 Relevance
+
+This session is critical for Project 1:
+
+- Embedding storage
+- Chunk-based retrieval
+- Multimodal comparison
+- RAG implementation
+- Efficient API usage
+
+---
