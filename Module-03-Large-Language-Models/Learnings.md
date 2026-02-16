@@ -233,7 +233,7 @@ Debugging skills are essential.
 
 ---
 
-# 🔹 Growth Reflection
+#  Growth Reflection
 
 Before this session:
 
