@@ -604,3 +604,166 @@ This session is critical for Project 1:
 - Efficient API usage
 
 ---
+
+
+# Session 3
+---
+Doubt clarifying Session
+
+---
+
+#  Session 4 
+## Embeddings, APIs, Chatbots & Function Calling
+
+---
+
+##  Word Embeddings and Semantic Meaning
+
+Word embeddings convert words into numerical vectors that capture meaning.
+
+Instead of treating words as plain text, embeddings represent:
+- Context
+- Relationships
+- Semantic similarity
+
+In our experiment, we generated embeddings for:
+- cat
+- dog
+- cheetah
+- rat
+
+We compared them using cosine similarity and observed:
+- cat and cheetah → very high similarity
+- cat and dog → high similarity
+- rat → lower similarity
+
+This proved that embeddings mathematically capture semantic meaning.
+
+---
+
+##  API Calls and Httpx Requests
+
+We used the `httpx` library to make API calls.
+
+We learned:
+- How to send POST requests
+- How to include headers
+- How to send JSON data
+- How to receive structured responses
+
+This helped us connect Python applications with AI models.
+
+---
+
+##  Chat Completion API
+
+We used the Chat Completion API with role-based messages:
+- system
+- user
+- assistant
+
+Conversation history was passed as a list of messages to maintain context.
+
+This allowed us to build a chatbot with memory.
+
+---
+
+##  Environment Setup and Python Code
+
+We configured environment variables inside `.bashrc`.
+
+Used:
+- export OPENAI_API_KEY
+- source ~/.bashrc
+
+We also tested APIs using `curl` commands from the terminal.
+
+---
+
+##  Chatbot with History
+
+We built a chatbot that maintains conversation history.
+
+We passed messages like:
+
+[
+  {"role": "user", "content": "..."},
+  {"role": "assistant", "content": "..."}
+]
+
+Each new message was appended to preserve context.
+
+---
+
+##  Base64 Encoding and Decoding
+
+We implemented Base64 practically.
+
+Steps:
+1. Convert image → Base64 string
+2. Send Base64 text to API
+3. Decode Base64 back → image
+
+This is required because APIs transmit data in text format.
+
+We successfully encoded and decoded images during testing.
+
+---
+
+##  Vector Databases, Distance, and Cosine Similarity
+
+Embedding vectors are compared using:
+
+### Euclidean Distance
+- Smaller distance → more similar
+
+### Cosine Similarity
+- Closer to 1 → highly similar
+- Measures angle between vectors
+
+In our experiment:
+- cat and cheetah had highest cosine similarity
+- cat and dog had high similarity
+- rat had lower similarity
+
+Cosine similarity is commonly used in NLP tasks.
+
+---
+
+##  Multimodal Embedding
+
+Multimodal embeddings convert:
+- Text
+- Images
+- Audio
+
+into the same dimensional vector space.
+
+This allows comparison across different data types.
+
+---
+
+##  Function Calling
+
+We used function calling to extract structured data from product images.
+
+Process:
+1. Convert image to Base64
+2. Send image to model
+3. Define function schema
+4. Receive structured JSON response
+
+The model returned:
+- product_name
+- manufactured_date
+- expiry_date
+
+Instead of returning plain text, the output was structured and machine-readable.
+
+This is useful for:
+- Product scanning systems
+- Automated data extraction
+- Real-world AI automation workflows
+
+---
+## Concepts Cleared!!🎉
