@@ -5,7 +5,7 @@ This file documents prompt experiments and observations.
 
 ---
 
-#  Experiment 1 – Simple Prompt
+##  Experiment 1 – Simple Prompt
 
 Prompt:
 Explain transformers in simple words.
@@ -20,7 +20,7 @@ Unstructured prompts give broad answers.
 
 ---
 
-#  Experiment 2 – Structured JSON Prompt
+##  Experiment 2 – Structured JSON Prompt
 
 Prompt:
 Explain transformers in simple words.
@@ -41,7 +41,7 @@ Specifying format improves clarity.
 
 ---
 
-#  Experiment 3 – Schema-Based Extraction
+##  Experiment 3 – Schema-Based Extraction
 
 Input:
 "Ravi purchased 5 books costing 200 rupees."
@@ -61,7 +61,7 @@ LLMs are powerful for information extraction.
 
 ---
 
-#  Experiment 4 – Sentiment Analysis
+##  Experiment 4 – Sentiment Analysis
 
 Prompt:
 Classify sentiment as Positive, Negative or Neutral.
@@ -77,7 +77,7 @@ LLMs work well for classification tasks.
 
 ---
 
-#  Experiment 5 – RAG Concept Simulation
+##  Experiment 5 – RAG Concept Simulation
 
 Prompt:
 Answer based only on provided context.
@@ -90,7 +90,7 @@ Providing context reduces hallucination.
 
 ---
 
-#  Experiment 6 – Cost Efficiency Test
+##  Experiment 6 – Cost Efficiency Test
 
 Compared:
 
@@ -105,7 +105,7 @@ Prompt optimization reduces cost.
 
 ---
 
-#  Experiment 7 – Vision Model Test
+##  Experiment 7 – Vision Model Test
 
 Prompt:
 Describe what is happening in this image.
@@ -141,7 +141,7 @@ The goal was to analyze how different prompt structures and retrieval strategies
 
 ---
 
-#  Experiment 1 – Direct Question (No Retrieval)
+##  Experiment 1 – Direct Question (No Retrieval)
 
 Prompt:
 "What is TypeScript?"
@@ -159,7 +159,7 @@ Direct prompting works for common knowledge but lacks grounding.
 
 ---
 
-#  Experiment 2 – Context-Based Prompt (Manual Context)
+##  Experiment 2 – Context-Based Prompt (Manual Context)
 
 Prompt:
 "Answer the question using only the context below:
@@ -176,7 +176,7 @@ Providing context improves factual reliability.
 
 ---
 
-#  Experiment 3 – RAG with Top-5 Retrieval
+##  Experiment 3 – RAG with Top-5 Retrieval
 
 Process:
 1. Convert user query to embedding.
@@ -193,7 +193,7 @@ RAG significantly improves contextual accuracy.
 
 ---
 
-#  Experiment 4 – Changing Top-K Value
+##  Experiment 4 – Changing Top-K Value
 
 Tested:
 
@@ -221,7 +221,7 @@ Top-5 gave the best balance between cost and completeness.
 
 ---
 
-#  Experiment 5 – Long Query vs Short Query
+##  Experiment 5 – Long Query vs Short Query
 
 Short Query:
 "What is TypeScript?"
@@ -239,7 +239,7 @@ Query clarity improves response depth but increases token consumption.
 
 ---
 
-#  Experiment 6 – Similarity Threshold Testing
+##  Experiment 6 – Similarity Threshold Testing
 
 Tested cosine similarity scores between:
 
@@ -255,7 +255,7 @@ Cosine similarity correctly reflects conceptual closeness.
 
 ---
 
-#  Experiment 7 – Multimodal Similarity
+##  Experiment 7 – Multimodal Similarity
 
 Compared:
 
@@ -271,7 +271,7 @@ Multimodal embeddings allow cross-format comparison effectively.
 
 ---
 
-#  Experiment 8 – Chunk Size Impact
+##  Experiment 8 – Chunk Size Impact
 
 Tested:
 
@@ -299,7 +299,7 @@ Medium-sized chunks worked best for documentation retrieval.
 
 ---
 
-#  Experiment 9 – Structured Output Format
+##  Experiment 9 – Structured Output Format
 
 Prompt:
 "Answer in JSON format with:
@@ -319,7 +319,7 @@ Structured prompts improve integration into applications.
 
 ---
 
-#  Experiment 10 – Token Cost Awareness
+##  Experiment 10 – Token Cost Awareness
 
 Compared:
 
