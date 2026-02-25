@@ -246,5 +246,118 @@ After this session:
 This session connected theory with real implementation.
 
 ---
+#  Session 4 
 
+---
 
+##  Understanding Word Embeddings
+
+In this session, I clearly understood how words are converted into numerical vectors.
+
+I generated embeddings for:
+- cat
+- dog
+- cheetah
+- rat
+
+After comparing them using cosine similarity, I observed:
+
+- Cat and cheetah had the highest similarity.
+- Cat and dog also showed high similarity.
+- Rat had lower similarity compared to the other animals.
+
+This helped me understand that embeddings truly capture semantic meaning mathematically.
+
+---
+
+##  Applying Cosine Similarity
+
+I learned how cosine similarity measures the angle between vectors instead of physical distance.
+
+Now I understand:
+- Higher cosine similarity → more related meanings
+- Lower cosine similarity → less related words
+
+This concept is very important for semantic search and recommendation systems.
+
+---
+
+##  Making API Calls Using httpx
+
+I implemented API calls using the httpx library.
+
+I practiced:
+- Sending POST requests
+- Passing headers (Authorization, Content-Type)
+- Sending JSON body
+- Parsing API responses
+
+This helped me understand how AI models are integrated into applications.
+
+---
+
+##  Building a Chatbot with Memory
+
+I built a chatbot that maintains conversation history.
+
+By passing:
+- user messages
+- assistant responses
+
+in a structured list format, the model was able to remember previous context.
+
+This helped me understand how conversational AI works internally.
+
+---
+
+##  Base64 Encoding and Decoding
+
+I implemented practical Base64 encoding and decoding.
+
+Process I performed:
+1. Converted image into Base64 string.
+2. Sent Base64 text to the API.
+3. Decoded Base64 back into image format.
+
+Now I understand how images are transmitted through APIs since APIs work with text data.
+
+---
+
+##  Function Calling with Images
+
+One of the most important learnings was using function calling with images.
+
+I:
+- Converted product image into Base64
+- Sent it to the model
+- Defined a function schema
+- Received structured JSON output
+
+The model extracted:
+- product_name
+- manufactured_date
+- expiry_date
+
+This showed me how AI can return structured machine-readable data instead of normal text.
+
+This is useful in:
+- Product scanning systems
+- Invoice data extraction
+- Automated workflows
+
+---
+
+##  Overall Understanding
+
+This session helped me connect:
+
+- Vector mathematics
+- API communication
+- Chat-based AI systems
+- Image processing
+- Structured data extraction
+
+It strengthened my practical understanding of how modern AI applications are built.
+
+---
+## Learnings Completed!!🎉
