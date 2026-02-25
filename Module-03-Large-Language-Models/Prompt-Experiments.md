@@ -1,4 +1,4 @@
-# 🧪 Week 3 – Prompt Experiments
+# 🧪 Week 3 – Prompt Experiments-Session 1
 ## Structured Prompt Engineering & Testing
 
 This file documents prompt experiments and observations.
@@ -132,7 +132,7 @@ From these experiments, I learned:
 
 ---
 
- Session 2 Prompt Experiments
+# Session 2 Prompt Experiments
 ## Embeddings, RAG & Retrieval Testing Log
 
 This document records practical prompt experiments performed while implementing embeddings and Retrieval-Augmented Generation (RAG).
@@ -349,4 +349,132 @@ From these experiments, I learned:
 
 ---
 
+#  Session 4 
 
+---
+
+##  Experiment 1: Word Embedding Similarity
+
+### Task:
+Generate embeddings for:
+- cat
+- dog
+- cheetah
+- rat
+
+Then compare them using cosine similarity.
+
+### Observation:
+- Cat and cheetah → highest similarity
+- Cat and dog → high similarity
+- Rat → lower similarity compared to others
+
+### Learning:
+Embeddings capture semantic relationships.
+Words with related meanings are placed closer in vector space.
+
+---
+
+##  Experiment 2: Chat Completion with History
+
+### Task:
+Build a chatbot that remembers previous conversation.
+
+### Method:
+Pass messages in structured format:
+- role: user
+- role: assistant
+
+Append each new message to conversation history before sending to API.
+
+### Observation:
+The model responded based on previous context.
+
+### Learning:
+Maintaining conversation history enables contextual AI responses.
+
+---
+
+##  Experiment 3: API Request using httpx
+
+### Task:
+Send a POST request to AI model using httpx.
+
+### Included:
+- Authorization header
+- JSON body
+- Model name
+- Messages list
+
+### Observation:
+Received structured JSON response from API.
+
+### Learning:
+Understanding API request structure is essential for AI integration.
+
+---
+
+##  Experiment 4: Base64 Encoding and Decoding
+
+### Task:
+Convert an image into Base64 and send it to the model.
+
+### Steps:
+1. Encode image → Base64 string
+2. Send Base64 string as input
+3. Decode Base64 back to image format
+
+### Observation:
+Image was successfully transmitted as text format.
+
+### Learning:
+Base64 allows binary data (images) to be sent through text-based APIs.
+
+---
+
+##  Experiment 5: Function Calling with Image Data Extraction
+
+### Task:
+Extract structured information from a product image.
+
+### Method:
+- Convert image to Base64
+- Send to model
+- Define function schema with required fields
+
+Fields extracted:
+- product_name
+- manufactured_date
+- expiry_date
+
+### Observation:
+Model returned structured JSON output instead of plain text.
+
+Example output format:
+
+{
+  "product_name": "...",
+  "manufactured_date": "...",
+  "expiry_date": "..."
+}
+
+### Learning:
+Function calling enables structured, machine-readable responses.
+This is useful for automation and real-world AI applications.
+
+---
+
+##  Final Reflection
+
+Through these prompt experiments, I understood:
+
+- How embeddings measure meaning
+- How cosine similarity compares vectors
+- How chat models maintain memory
+- How images are processed using Base64
+- How structured outputs are generated using function calling
+
+This session strengthened my practical understanding of building AI-powered systems.
+
+---
+## Experiments Completed!!🎉
