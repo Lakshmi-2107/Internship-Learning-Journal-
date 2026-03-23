@@ -113,13 +113,18 @@ Overall, I am now confident in transforming data into compelling visual stories 
 ---
 
 ## 🔄 Weekly Update Log
-| Week | What I Learned |
-|------|----------------|
-| Week 1 | |
-| Week 2 | |
+
+| Week   | What I Learned                                                                                     |
+|--------|----------------------------------------------------------------------------------------------------|
+| Week 1 | Set up Linux (WSL), learned terminal, Git/GitHub, Python environments, and core OS concepts       |
+| Week 2 | Containerization (Docker/Podman), FastAPI APIs, CI/CD, and cloud deployment workflows             |
+| Week 3 | LLMs, embeddings, RAG, semantic search, APIs, and structured AI system design                     |
+| Week 4 | Data collection via web scraping, APIs, PDFs, and structuring data into JSON/CSV                  |
+| Week 5 | Data cleaning using Excel, OpenRefine, CLI tools, and handling APIs and media data                |
+| Week 6 | Data analysis with Pandas/DuckDB, EDA, statistics, and insight generation                         |
+| Week 7 | Data visualization, storytelling, dashboards, and communication of insights                       |
 
 ---
-
 
 
 
